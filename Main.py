@@ -179,6 +179,7 @@ def main():
             if pg.sprite.collide_rect(food, fish):
                 points += 10
                 allFood.remove(food)
+                allFood.append(Food())
 
 
         scores = font_small.render(str(points), True, (255, 255,255))
